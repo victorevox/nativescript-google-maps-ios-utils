@@ -8,7 +8,9 @@ export class HelloWorldModel extends Observable {
   constructor() {
     super();
 
-    this.googleMapsIosUtils = new GoogleMapsIosUtils();
-    this.message = this.googleMapsIosUtils.message;
+    // this.googleMapsIosUtils = new GoogleMapsIosUtils();
+    GoogleMapsIosUtils.testMapsUtilsAvailability();
+    // this.message = this.googleMapsIosUtils.message;
+
   }
 }
